@@ -20,7 +20,7 @@ import java.time.LocalDateTime;
 public class BeerDTO {
 
     @Id
-    private Integer id;
+    private String id;
 
     @NotBlank
     @Size(min = 3, max = 255)

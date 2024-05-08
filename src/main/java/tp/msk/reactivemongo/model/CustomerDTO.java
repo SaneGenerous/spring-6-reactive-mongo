@@ -19,7 +19,7 @@ import java.time.LocalDateTime;
 public class CustomerDTO {
 
     @Id
-    private Integer id;
+    private String id;
     @NotBlank
     @Size(max = 255)
     private String customerName;
