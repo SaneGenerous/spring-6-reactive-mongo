@@ -29,16 +29,13 @@ public class BeerDTO {
     @Size(min = 1, max = 255)
     private String beerStyle;
 
-    @Size(max = 255)
+    @Size(max = 25)
     private String upc;
 
     private Integer quantityOnHand;
-
     private BigDecimal price;
-
     @CreatedDate
     private LocalDateTime createdDate;
-
     @LastModifiedDate
     private LocalDateTime lastModifiedDate;
 

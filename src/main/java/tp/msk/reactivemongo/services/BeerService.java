@@ -5,6 +5,8 @@ import reactor.core.publisher.Mono;
 import tp.msk.reactivemongo.model.BeerDTO;
 
 public interface BeerService {
+    Mono<BeerDTO> findFirstByBeerName(String beerName);
+    Flux<BeerDTO> findByBeerStyle(String beerStyle);
     Mono<BeerDTO> saveBeer(Mono<BeerDTO> beerDTO);
     Mono<BeerDTO> saveBeer(BeerDTO beerDTO);
     Mono<BeerDTO> getBeerById(String beerId);
